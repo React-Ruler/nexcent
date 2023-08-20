@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+// Set your brand colors
+$--primary-color-green: #4caf4f;
+$--secondary-color-black: #263238;
+$--info-color-blue: #2194f3;
+
+// Set your neutral colors
+$--neutral-color-white: #ffffff;
+$--neutral-color-silver: #f5f7fa;
+$--neutral-color-dark-grey: #4d4d4d;
+$--neutral-color-grey: #717171;
+$--neutral-color-light-grey: #89939e;
+$--neutral-color-grey-blue: #abbed1;
+
+// Set your color shade
+$--shade-1: #43a046;
+$--shade-2: #388e3b;
+$--shade-3: #237d31;
+$--shade-4: #1b5e1f;
+$--shade-5: #103e13;
+
+// Set your color tint
+$--tint-1: #66bb69;
+$--tint-2: #81c784;
+$--tint-3: #a5d6a7;
+$--tint-4: #c8e6c9;
+$--tint-5: #e8f5e9;
+
+// Set your color action
+$--warning: #fbc02d;
+$--error: #e53835;
+$--success: #2e7d31;
+
+// Update Bulma's global variables
+$family-sans-serif: "Inter", sans-serif;
+$primary: $--secondary-color-black;
+$link: $--primary-color-green;
+$info: $--info-color-blue;
+$success: $--success;
+$warning: $--warning;
+$danger: $--error;
+$dark: $--neutral-color-dark-grey;
+$text: $--neutral-color-dark-grey;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $--neutral-color-white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Update some of Bulma's Navbar component variables
+$navbar-background-color: $--neutral-color-silver;
+$navbar-padding-vertical: 1rem;
+$navbar-padding-horizontal: 5.25rem;
+
+$card-background-color: $--neutral-color-white;
+
+// Update some of Bulma's Footer layout variables
+$footer-background-color: $--secondary-color-black;
+$footer-color: $--neutral-color-silver;
+
+// Update some of Bulma's input formvariables
+$input-background-color: $--neutral-color-dark-grey;
+$input-radius: 0.125rem;
+$input-color: $--neutral-color-white;
+$input-border-color: $--error;
+$input-icon-color: $--neutral-color-white;
+$input-hover-border-color: $--neutral-color-dark-grey;
+$input-icon-active-color: $--neutral-color-white;
+
+// Hero layout section
+.hero {
+  background: $--neutral-color-silver;
+
+  h1.title {
+    color: $--neutral-color-dark-grey;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px;
+
+    span {
+      color: $--primary-color-green;
+    }
+  }
+
+  p.subtitle {
+    color: $--neutral-color-grey;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+// Clients layout section
+
+section {
+  .container {
+    h2.title {
+      color: $--neutral-color-dark-grey;
+      text-align: center;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 40px;
+    }
+
+    h3.title {
+      color: $--neutral-color-dark-grey;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 40px;
+    }
+
+    h4.title {
+      color: $--neutral-color-dark-grey;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+    }
+
+    h5.title {
+      color: $--neutral-color-dark-grey;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 40px;
+
+      span {
+        color: $--primary-color-green;
+      }
+    }
+
+    p.subtitle {
+      color: $--neutral-color-grey;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+}
+
+.achievements_bg {
+  background: $--neutral-color-silver;
+}
+
+.testimonials_bg {
+  background: $--neutral-color-silver;
+}
+
+.footer {
+  a {
+    color: $--primary-color-green;
+
+    &:hover {
+      color: $--tint-2;
+    }
+  }
+}
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
